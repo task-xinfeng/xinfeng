@@ -1,5 +1,31 @@
 <div class="content block_center">
-
+<!--pics slide-->
+<div class="p_slide block_center">
+	<ul class="p_ul">
+    	<li>
+        	<a href="#"><img src="#" /></a>
+        </li>
+        <li>
+        	<a href="#"><img src="#" /></a>
+        </li>
+        <li>
+        	<a href="#"><img src="#" /></a>
+        </li>
+        <li>
+        	<a href="#"><img src="#" /></a>
+        </li>
+        <li>
+        	<a href="#"><img src="#" /></a>
+        </li>
+    </ul>
+    <ul class="c_ul clearfix">
+    	<li>1</li>
+        <li class="current">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<!--pics slide ends-->
 <!--供应商-->
     <div class="block_center thumb_list_block thumb_list_block_opposite brand clearfix">
     	<div class="top_title">
@@ -90,7 +116,7 @@
 </div>
 <!--通栏广告 ends-->
 
-<!--推荐产品-->
+<!--新风供应商-->
 	<div class="block_center thumb_list_block suppliers clearfix">
     	<div class="top_title">
             <h2>新风供应商</h2>
@@ -160,7 +186,7 @@
             </div>
         </div>
 	</div>
-<!--推荐产品 ends-->
+<!--新风供应商 ends-->
 
 <!--通栏广告-->
 <div class="a_w block_center">
@@ -276,7 +302,7 @@
                 <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
                 <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
                 <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item more"><a href="#">查看更多</a></li>
             </ul>
         </div>
         <div class="side">
