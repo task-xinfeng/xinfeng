@@ -1,0 +1,19 @@
+2012-09-16 03:05:57 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+#0 C:\wamp\www\xinfeng\lib\Cake\Model\ConnectionManager.php(94): ConnectionManager::_getConnectionObject('default')
+#1 C:\wamp\www\xinfeng\lib\Cake\Model\Model.php(3157): ConnectionManager::getDataSource('default')
+#2 C:\wamp\www\xinfeng\lib\Cake\Model\Model.php(1092): Model->setDataSource('default')
+#3 C:\wamp\www\xinfeng\lib\Cake\Model\Model.php(3179): Model->setSource('brands')
+#4 C:\wamp\www\xinfeng\lib\Cake\Model\Model.php(2630): Model->getDataSource()
+#5 C:\wamp\www\xinfeng\app\Controller\DashboardController.php(18): Model->find('all', Array)
+#6 [internal function]: DashboardController->brands()
+#7 C:\wamp\www\xinfeng\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(DashboardController), Array)
+#8 C:\wamp\www\xinfeng\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\xinfeng\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\xinfeng\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-09-16 03:05:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\xinfeng\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-16 03:05:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 C:\wamp\www\xinfeng\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
