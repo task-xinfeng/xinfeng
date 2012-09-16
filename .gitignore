@@ -7,3 +7,7 @@
 /dist
 .DS_Store
 /tags
+
+app/Config/database.php
+
+app/Config/database.php
