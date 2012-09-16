@@ -12,10 +12,11 @@
 .content .block_center .top_title h2{ height:42px; line-height:42px; font-size:14px; padding-left:15px;}
 .content .block_center .main{ width:750px; float:right;}
 .content .block_center .side{ width:240px; float:left;}
+.content .block_center .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
+.content .block_center .side .a_s{ height:98px; margin-bottom:0;}
 
+/*带缩略图的列表样式*/
 .content .thumb_list_block{}
-.content .thumb_list_block .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
-.content .thumb_list_block .side .a_s{ height:98px; margin-bottom:0;}
 .content .thumb_list_block .main .items_group{}
 .content .thumb_list_block .main .items_group li.item{ float:left; padding-left:20px; width:167px; height:205px;}
 .content .thumb_list_block .main .items_group li.item .pic{ width:165px; height:155px; background:#f7f7f7; margin-bottom:10px;}
@@ -30,12 +31,18 @@
 .content .thumb_list_block_opposite .main{ float:left;}
 .content .thumb_list_block_opposite .side{ float:right;}
 .content .thumb_list_block_opposite .main .items_group li.item{ padding:0 20px 0 0;}
-.content .thumb_list_block_opposite .main .items_group li.item h3{ display:none;}
 
 /*品牌推荐*/
 .content .block_center.brand .main .items_group li.item{ height:150px;}
 .content .block_center.brand .main .items_group li.item .pic{ height:100px;}
 .content .block_center.brand .main .items_group li.more a{ padding-top:40px; height:110px;}
+.content .block_center.brand .main .items_group li.item h3{ display:none;}
+
+/*新闻列表通用样式*/
+.content .news_list_block .main .items_group{ padding-left:20px;}
+.content .news_list_block .main .items_group li{ width:365px; float:left; padding:0 0 10px 0; height:20px; line-height:20px;}
+.content .news_list_block .main .items_group li a{ font-size:14px; display:block; width:255px; overflow:hidden; float:left; line-height:20px; height:20px; text-overflow:ellipsis; white-space:nowrap;}
+.content .news_list_block .main .items_group li span.date{ display:block; float:right; width:100px; height:20px; line-height:20px; font-size:12px; color:#999;}
 
 /*通栏广告 990*60*/
 .a_w{ background:#f7f7f7;}

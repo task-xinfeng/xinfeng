@@ -250,13 +250,44 @@
 </div>
 <!--通栏广告 ends-->
 
-<!--供应商-->
+<!--行业新闻-->
     <div class="block_center news_list_block news clearfix">
     	<div class="top_title">
             <h2>行业新闻</h2>
         </div>
+        <div class="main">
+        	<ul class="items_group clearfix">
+            	<li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
+            </ul>
+        </div>
+        <div class="side">
+        	<div class="a a_b">
+            	<a href="#" target="_blank">
+                	<img src="#" width="238" height="298" />
+                </a>
+            </div>
+        </div>
     </div>
-<!--供应商 ends-->
+<!--行业新闻 ends-->
 
 
 </div>
