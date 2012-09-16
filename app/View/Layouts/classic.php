@@ -1,28 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title><?php echo $title_for_layout;?></title>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	<?php echo $this->Html->css(array('bootstrap', 'common')); ?>
-	<?php echo $this->Html->script(array('jquery-1.7.2', 'bootstrap')); ?>
-	<style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-   
+<title><?php echo $title_for_layout;?></title>
+<?php echo $this->Html->css(array('style')); ?>
+<?php echo $this->Html->script(array('jquery-1.7.2')); ?>
 </head>
-<body class="home home-new  logged-out ">
+<body>
 <?php echo $this->element('classic_header'); ?> 
-<div class="container"> 
 <?php echo $content_for_layout; ?>
-<hr>
 <?php echo $this->element('classic_footer'); ?>
-</div>
 </body>
 </html>
