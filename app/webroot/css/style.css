@@ -22,8 +22,8 @@
 
 /*居中板块通用样式*/
 .block_center{ width:990px; margin:0 auto 20px auto;}
-.content .block_center .top_title{ height:40px; margin-bottom:8px; border-top:2px solid #e96f6f; background:url(/img/block_center_top_title_bg.png) repeat-x;}
-.content .block_center .top_title h2{ height:38px; line-height:38px; width:240px; overflow:hidden; font-size:16px; text-indent:15px; color:#f7f7f7; text-shadow:1px 1px #999; background:url(/img/mix_bg.png) no-repeat;}
+.content .block_center .top_title{ height:40px; margin-bottom:8px; border-top:2px solid #e96f6f; background:url(../img/block_center_top_title_bg.png) repeat-x;}
+.content .block_center .top_title h2{ height:38px; line-height:38px; width:240px; overflow:hidden; font-size:16px; text-indent:15px; color:#f7f7f7; text-shadow:1px 1px #999; background:url(../img/mix_bg.png) no-repeat;}
 .content .block_center .main{ width:750px; float:right;}
 .content .block_center .side{ width:240px; float:left;}
 .content .block_center .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
@@ -45,7 +45,7 @@
 .content .thumb_list_block .main .items_group li.item h3{ text-align:center; line-height:15px;}
 .content .thumb_list_block .main .items_group li.item h3 a{ font-weight:normal; text-shadow:0 1px 0 #fff;}
 .content .thumb_list_block .main .items_group li.more a{ display:block; padding:80px 45px 0 45px; height:125px}
-.content .thumb_list_block .main .items_group li.more a span.more_icon{ display:block; height:40px; margin-bottom:15px; background:url(/img/mix_bg.png) -480px 0;}
+.content .thumb_list_block .main .items_group li.more a span.more_icon{ display:block; height:40px; margin-bottom:15px; background:url(../img/mix_bg.png) -480px 0;}
 .content .thumb_list_block .main .items_group li.more a span.more_text{ display:block; text-align:center; font-size:14px; color:#eb6877;}
 .content .thumb_list_block .main .items_group li.more a:hover{ background:#f7f7f7; text-decoration:none;}
 
