@@ -17,19 +17,25 @@
 .content .thumb_list_block .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
 .content .thumb_list_block .side .a_s{ height:98px; margin-bottom:0;}
 .content .thumb_list_block .main .items_group{}
-.content .thumb_list_block .main .items_group li.item{ float:left; padding-left:20px; width:157px; height:205px;}
-.content .thumb_list_block .main .items_group li .pic{ width:155px; height:155px; background:#f7f7f7; margin-bottom:10px;}
-.content .thumb_list_block .main .items_group li h3{ text-align:center; line-height:15px;}
-.content .thumb_list_block .main .items_group li h3 a{ font-weight:normal; text-shadow:0 1px 0 #fff;}
+.content .thumb_list_block .main .items_group li.item{ float:left; padding-left:20px; width:167px; height:205px;}
+.content .thumb_list_block .main .items_group li.item .pic{ width:165px; height:155px; background:#f7f7f7; margin-bottom:10px;}
+.content .thumb_list_block .main .items_group li.item h3{ text-align:center; line-height:15px;}
+.content .thumb_list_block .main .items_group li.item h3 a{ font-weight:normal; text-shadow:0 1px 0 #fff;}
 .content .thumb_list_block .main .items_group li.more a{ display:block; padding:80px 45px 0 45px; height:125px}
 .content .thumb_list_block .main .items_group li.more a span.more_icon{ display:block; height:40px; margin-bottom:15px;}
 .content .thumb_list_block .main .items_group li.more a span.more_text{ display:block; text-align:center; font-size:14px;}
-.content .thumb_list_block .main .items_group li.more a span.more_text:hover{ text-decoration:none;}
-.content .thumb_list_block .main .items_group li.more a:hover{ background:#f7f7f7;}
+.content .thumb_list_block .main .items_group li.more a:hover{ background:#f7f7f7; text-decoration:none;}
 
 /*如果main side反向排列*/
 .content .thumb_list_block_opposite .main{ float:left;}
 .content .thumb_list_block_opposite .side{ float:right;}
+.content .thumb_list_block_opposite .main .items_group li.item{ padding:0 20px 0 0;}
+.content .thumb_list_block_opposite .main .items_group li.item h3{ display:none;}
+
+/*品牌推荐*/
+.content .block_center.brand .main .items_group li.item{ height:150px;}
+.content .block_center.brand .main .items_group li.item .pic{ height:100px;}
+.content .block_center.brand .main .items_group li.more a{ padding-top:40px; height:110px;}
 
 /*通栏广告 990*60*/
 .a_w{ background:#f7f7f7;}
