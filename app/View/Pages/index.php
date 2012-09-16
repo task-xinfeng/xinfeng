@@ -89,12 +89,20 @@
                     </div>
                     <h3><a href="#">title</a></h3>
                 </li>
-                <li class="item more">
+                <li class="item">
+                	<div class="pic">
+                    	<a href="#">
+                        	<img src="#" width="165" height="100" />
+                        </a>
+                    </div>
+                    <h3><a href="#">title</a></h3>
+                </li>
+                <!--<li class="item more">
                 	<a href="#" target="_blank" title="更多">
                         <span class="more_icon"></span>
                         <span class="more_text">更多</span>
                     </a>
-                </li>
+                </li>-->
             </ul>
         </div>
         <div class="side">
