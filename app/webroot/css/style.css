@@ -16,20 +16,21 @@
 .p_slide{ height:250px; position:relative; overflow:hidden; box-shadow:0 0 5px #ccc;}
 .p_slide .p_ul{ position:absolute; width:990px; left:0; top:0;}
 .p_slide .p_ul li{ height:250px; background:#f7f7f7;}
-.p_slide .c_ul{ position:absolute; right:20px; bottom:20px;}
+.p_slide .c_ul{ position:absolute; right:20px; bottom:20px; display:none;}
 .p_slide .c_ul li{ float:left; width:20px; height:20px; text-align:center; line-height:20px; border-radius:10px; background:#33b5ec; color:#FFF; margin-left:10px; text-shadow:1px 1px #999;}
 .p_slide .c_ul li.current{ background:#eb6877;}
 
 /*居中板块通用样式*/
 .block_center{ width:990px; margin:0 auto 20px auto;}
 .content .block_center .top_title{ height:40px; margin-bottom:8px; border-top:2px solid #e96f6f; background:url(../img/block_center_top_title_bg.png) repeat-x;}
-.content .block_center .top_title h2{ height:38px; line-height:38px; width:240px; overflow:hidden; font-size:16px; text-indent:15px; color:#f7f7f7; text-shadow:1px 1px #999; background:url(../img/mix_bg.png) no-repeat;}
+.content .block_center .top_title h2{ height:38px; line-height:38px; width:240px; overflow:hidden; font-size:16px; text-indent:15px; color:#f7f7f7; text-shadow:0 1px 1px #fff; background:url(../img/mix_bg.png) no-repeat; background:none; color:#333;}
 .content .block_center .main{ width:750px; float:right;}
 .content .block_center .side{ width:240px; float:left;}
 .content .block_center .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
 .content .block_center .side .a_s{ height:98px; margin-bottom:0;}
 
 /*其他板块的标题背景*/
+.content .brands .top_title{ display:none;}
 .content .suppliers .top_title{ border-top:2px solid #53aff5;}
 .content .suppliers .top_title h2{ background-position:-240px 0;}
 .content .products .top_title{ border-top:2px solid #f39d23;}
@@ -55,10 +56,10 @@
 .content .thumb_list_block_opposite .main .items_group li.item{ padding:0 20px 0 0;}
 
 /*品牌推荐*/
-.content .block_center.brand .main .items_group li.item{ height:150px;}
-.content .block_center.brand .main .items_group li.item .pic{ height:100px;}
-.content .block_center.brand .main .items_group li.more a{ padding-top:40px; height:110px;}
-.content .block_center.brand .main .items_group li.item h3{ display:none;}
+.content .block_center.brands .main .items_group li.item{ height:150px;}
+.content .block_center.brands .main .items_group li.item .pic{ height:150px; margin-bottom:0;}
+.content .block_center.brands .main .items_group li.more a{ padding-top:40px; height:110px;}
+.content .block_center.brands .main .items_group li.item h3{ display:none;}
 
 /*新闻列表通用样式*/
 .content .news_list_block .main .items_group{ padding-left:20px;}

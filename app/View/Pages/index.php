@@ -27,7 +27,7 @@
 </div>
 <!--pics slide ends-->
 <!--供应商-->
-    <div class="block_center thumb_list_block thumb_list_block_opposite brand clearfix">
+    <div class="block_center thumb_list_block thumb_list_block_opposite brands clearfix">
     	<div class="top_title">
             <h2>品牌推荐</h2>
         </div>

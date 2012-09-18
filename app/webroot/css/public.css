@@ -7,7 +7,7 @@ img{ border:none;}
 .clearfix:after{content:"."; visibility:hidden; display:block; width:0; height:1px; clear:both;}
 .clearfix{ *zoom:1;}
 
-a{ font-size:12px; text-decoration:none; color:#33b5ec;}
+a{ font-size:12px; text-decoration:none; color:#444444;}
 a:hover{ text-decoration:underline;}
 
 
