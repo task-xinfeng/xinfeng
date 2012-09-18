@@ -127,7 +127,7 @@
 <!--新风供应商-->
 	<div class="block_center thumb_list_block suppliers clearfix">
     	<div class="top_title">
-            <h2>新风供应商</h2>
+            <h2>新风品牌</h2>
         </div>
     	<div class="main">
         	<ul class="items_group clearfix">
@@ -176,7 +176,7 @@
                 <li class="item more">
                 	<a href="#" target="_blank" title="更多">
                         <span class="more_icon"></span>
-                        <span class="more_text">更多</span>
+                        <span class="more_text">更多品牌</span>
                     </a>
                 </li>
             </ul>
@@ -256,7 +256,7 @@
                 <li class="item more">
                 	<a href="#" target="_blank" title="更多">
                         <span class="more_icon"></span>
-                        <span class="more_text">更多</span>
+                        <span class="more_text">更多产品</span>
                     </a>
                 </li>
             </ul>
