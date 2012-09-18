@@ -323,5 +323,23 @@
     </div>
 <!--行业新闻 ends-->
 
+<!--底部介绍-->
+	<div class="block_center intro_bottom">
+    
+    </div>
+<!--底部介绍 ends-->
+
+<!--底部加入-->
+	<div class="block_center join_bottom">
+    	<a href="#" class="join_link"></a>
+    </div>
+<!--底部加入 ends-->
+
 
 </div>
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 @import url(public.css);
 .header_w{}
 .header{ height:80px; position:relative;}
-.header .logo{ width:135px; height:45px; position:absolute; left:0; top:18px; background:url(../img/logo.png) no-repeat;}
+.header .logo{ width:120px; height:43px; position:absolute; left:0; top:18px; background:url(../img/logo.png) no-repeat;}
 .header .header_nav{ position:absolute; top:25px; right:0;}
 .header .header_nav .header_nav_ul{}
 .header .header_nav .header_nav_ul li{ float:left;}
@@ -47,17 +47,17 @@
 .content .thumb_list_block .main .items_group li.item h3 a{ font-weight:normal; text-shadow:0 1px 0 #fff;}
 .content .thumb_list_block .main .items_group li.more a{ display:block; padding:40px 45px 0 45px; height:165px}
 .content .thumb_list_block .main .items_group li.more a span.more_icon{ display:block; height:80px; margin-bottom:15px; background:url(../img/mix_bg.png);}
-.content .thumb_list_block .main .items_group li.more a span.more_text{ display:block; text-align:center; font-size:14px; color:#de210e;}
+.content .thumb_list_block .main .items_group li.more a span.more_text{ display:block; text-align:center; font-size:14px; color:#666666;}
 .content .thumb_list_block .main .items_group li.more a:hover{ background:#f7f7f7; text-decoration:none;}
 .content .thumb_list_block .main .items_group li.more a span.more_icon_hover{ background-position:0 -80px;}
 
 /*新风品牌*/
-.content .thumb_list_block.products .main .items_group li.more a span.more_icon{background-position:-150px 0;}
-.content .thumb_list_block.products .main .items_group li.more a span.more_icon_hover{background-position:-150px -80px;}
+.content .thumb_list_block.products .main .items_group li.more a span.more_icon{background-position:-75px 0;}
+.content .thumb_list_block.products .main .items_group li.more a span.more_icon_hover{background-position:-75px -80px;}
 
 /*新风产品*/
-.content .thumb_list_block.suppliers .main .items_group li.more a span.more_icon{background-position:-75px 0;}
-.content .thumb_list_block.suppliers .main .items_group li.more a span.more_icon_hover{background-position:-75px -80px;}
+.content .thumb_list_block.suppliers .main .items_group li.more a span.more_icon{background-position:-150px 0;}
+.content .thumb_list_block.suppliers .main .items_group li.more a span.more_icon_hover{background-position:-150px -80px;}
 
 /*如果main side反向排列*/
 .content .thumb_list_block_opposite .main{ float:left;}
@@ -82,3 +82,11 @@
 .a_w{ background:#f7f7f7;}
 .a_w a{ display:block; height:80px;}
 
+/*首页底部intro*/
+.intro_bottom{ height:200px; padding-top:130px; background:url(../img/intro_bottom.jpg) no-repeat;}
+
+
+/*底部加入*/
+.join_bottom{ height:210px; position:relative; background:url(../img/join_bottom.jpg) no-repeat; border:1px solid #e7e7e7; border-left:none; border-right:none;}
+.join_bottom .join_link{ display:block; width:200px; position:absolute; top:115px; left:50%; margin-left:-100px; height:50px; background:url(../img/mix_bg.png) 0 -160px; border-radius:3px;}
+.join_bottom .join_link:hover{ background-position:0 -220px; box-shadow:0 0 5px #aaa;}

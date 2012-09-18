@@ -1,5 +1,7 @@
 <div class="header block_center">
-	<div class="logo"></div>
+	<div class="logo">
+    	<a href="#"></a>
+    </div>
 	<div class="header_nav">
     	<ul class="header_nav_ul clearfix">
         	<li><a href="#" >新风品牌</a></li>
