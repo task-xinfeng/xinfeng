@@ -83,7 +83,15 @@
 .a_w a{ display:block; height:80px;}
 
 /*首页底部intro*/
-.intro_bottom{ height:200px; padding-top:130px; background:url(../img/intro_bottom.jpg) no-repeat;}
+.intro_bottom{ padding:160px 0 30px 0; background:url(../img/intro_bottom.jpg) no-repeat;}
+.intro_bottom .intro_ul{ overflow:hidden; _height:1px; _overflow:visible; padding:0 30px;}
+.intro_bottom .intro_ul li.i{ float:left; width:50%; height:80px; margin-bottom:25px;}
+.intro_bottom .intro_ul li.i span.icon{ float:left; display:block; width:80px; height:80px; background:url(../img/mix_bg.png) 0 -280px;}
+.intro_bottom .intro_ul li.i p{ margin-left:100px; font-size:20px; line-height:30px; margin-bottom:5px; padding:0 10px 0 0; color:#666; text-shadow:0 2px 1px #fff;}
+.intro_bottom .intro_ul li.i em{ font-style:normal; font-size:12px; line-height:18px; margin-left:100px; padding:0 10px 0 0; display:block; color:#999; text-shadow:0 1px 1px #fff;}
+.intro_bottom .intro_ul li.i_2 span.icon{ background-position:-80px -280px;}
+.intro_bottom .intro_ul li.i_3 span.icon{ background-position:-160px -280px;}
+.intro_bottom .intro_ul li.i_4 span.icon{ background-position:-240px -280px;}
 
 
 /*底部加入*/
