@@ -1,4 +1,4 @@
-<div class="content block_center">
+<div class="content block_center index">
 <!--pics slide-->
 <div class="p_slide block_center">
 	<ul class="p_ul">
