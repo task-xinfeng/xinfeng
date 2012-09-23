@@ -1,13 +1,13 @@
 <?php
 App::uses('AppController', 'Controller');
-class PagesController extends AppController {
+class BrandsController extends AppController {
 
 /**
  * Controller name
  *
  * @var string
  */
-	public $name = 'Pages';
+	public $name = 'Brands';
 	public $layout = 'classic';
 
 /**
