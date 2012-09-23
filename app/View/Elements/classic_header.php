@@ -4,12 +4,31 @@
     </div>
 	<div class="header_nav">
     	<ul class="header_nav_ul clearfix">
-        	<li><a href="#" >新风品牌</a></li>
-            <li><a href="#" >新风供应商</a></li>
-            <li><a href="#" >行业新闻</a></li>
-            <li><a href="#" >新风行情</a></li>
-            <li><a href="#" >新风导购</a></li>
-            <li><a href="#" >新风产品</a></li>
+			<li>
+				<a href="<?php echo $this->Html->url(array("controller" => "pages","action" => "index"));?>">
+					首页
+				</a>
+			</li>
+        	<li>
+				<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "index"));?>">
+					新风品牌
+				</a>
+			</li>
+            <li>
+				<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "news"));?>">	
+					行业新闻
+				</a>
+			</li>
+            <li>
+				<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "guides"));?>">	
+					产品导购
+				</a>
+			</li>
+            <li>
+				<a href="<?php echo $this->Html->url(array("controller" => "products","action" => "index"));?>">	
+					新风产品
+				</a>
+			</li>
         </ul>
     </div>
 </div>
