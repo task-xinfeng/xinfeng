@@ -102,3 +102,44 @@
 .footer{ margin-bottom:0; padding:20px 0; border-top:1px solid #fff;}
 .footer .links{ text-align:center; padding:15px 0;}
 .footer .links a{ padding:0 10px;}
+
+/*缩略图列表 每一项宽度为320px*/
+.thumb_320_block{}
+.thumb_320_ul{}
+.thumb_320_ul li{ float:left; width:320px; background:#fff; margin:0 15px 35px 0; position:relative;}
+.thumb_320_ul li.right{ margin-right:0;}
+.thumb_320_ul li h2{ height:30px; padding:15px;}
+.thumb_320_ul li h2 a{ font-size:20px; line-height:30px; color:#666;}
+.thumb_320_ul li .pic{ width:320px; height:290px; overflow:hidden; background:#f7f7f7;}
+.thumb_320_ul li .figures{ padding:10px 0 30px 30px;}
+.thumb_320_ul li .figures .num_item{ width:80px; float:left; margin-right:10px;}
+.thumb_320_ul li .figures .num_item .num a{ display:block; height:40px; line-height:40px; border-bottom:1px solid#eee; color:#666; font-size:30px; font-family:Arial, Helvetica, sans-serif; text-align:center;}
+.thumb_320_ul li .figures .num_item .t{ font-size:12px; height:30px; line-height:30px; text-align:center; color:#999}
+.thumb_320_ul li .shadow{ width:320px; height:15px; position:absolute; left:0; bottom:-15px; background:url(../img/thumb_320_li_shadow.png) no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
