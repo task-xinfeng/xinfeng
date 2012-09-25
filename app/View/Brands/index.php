@@ -1,31 +1,18 @@
-<div class="content block_center brands">
 <!--top 广告-->
 <div class="p_slide block_center">
 	<ul class="p_ul">
     	<li>
         	<a href="#"><img src="#" /></a>
         </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
     </ul>
     <ul class="c_ul clearfix">
     	<li>1</li>
         <li class="current">2</li>
-        <li>3</li>
-        <li>4</li>
     </ul>
 </div>
 <!--top 广告 ends-->
+
+<div class="content block_center brands">
 
 <!--品牌缩略图列表-->
 <div class="block_center thumb_320_block">

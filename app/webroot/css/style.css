@@ -25,6 +25,9 @@
 .content .block_center .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
 .content .block_center .side .a_s{ height:98px; margin-bottom:0;}
 
+.content .cmain{ float:left; width:730px; background:#fefefe;}
+.content .cside{ float:right; width:240px; background:#fefefe;}
+
 .content.index{ margin-bottom:0;}
 
 /*其他板块的标题背景*/
@@ -118,13 +121,20 @@
 .thumb_320_ul li .shadow{ width:320px; height:15px; position:absolute; left:0; bottom:-15px; background:url(../img/thumb_320_li_shadow.png) no-repeat;}
 
 
-
-
-
-
-
-
-
+/*带有摘要的产品列表*/
+.summary_list_block { padding:15px;}
+.summary_list li{ padding:0 0 20px 0; border-bottom:1px dashed #e7e7e7; margin-bottom:20px;}
+.summary_list li h2.stitle{ font-size:22px; line-height:28px; margin-bottom:10px; padding:3px 5px;}
+.summary_list li .sinfo{ margin-bottom:15px;}
+.summary_list li .sinfo dd{ float:left; height:25px; padding:0; line-height:25px; margin-right:10px;}
+.summary_list li .sinfo dd span.icon{ float:left; display:block; width:15px; height:15px; background:url(../img/mix_bg.png) 0 -380px no-repeat; margin-right:3px; position:relative; top:5px;}
+.summary_list li .sinfo dd.total span.icon{ background-position:-15px -380px;}
+.summary_list li .sinfo dd.date span.icon{ background-position:-30px -380px;}
+.summary_list li .smain .thumb{ float:left; width:200px; height:200px; border:1px solid #e7e7e7; background:#e7e7e7; margin: 0 15px 15px 0;}
+.summary_list.without_thumb li .smain .thumb{ display:none;}
+.summary_list li .smain .para{ font-size:14px;}
+.summary_list li .smain .para p{ font-size:14px; line-height:22px; text-indent:2em; margin-bottom:1em; color:#444;}
+.summary_list li .smain .para a{ text-decoration:underline;}
 
 
 
