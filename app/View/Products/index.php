@@ -12,6 +12,12 @@
 </div>
 <!--top 广告 ends-->
 
+<!--面包屑-->
+<div class="page_route block_center">
+	<a href="#">首页</a><span class="arr">&rArr;</span><a href="#">新风产品</a><span class="arr">&rArr;</span><span class="current">新风产品</span>
+</div>
+<!--面包屑 ends-->
+
 <div class="content block_center products clearfix">
 	<div class="cmain">
     	<!--摘要列表-->

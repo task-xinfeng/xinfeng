@@ -30,6 +30,11 @@
 
 .content.index{ margin-bottom:0;}
 
+/*面包屑*/
+.page_route{}
+.page_route span.arr{ padding:0 5px; color:#999;}
+.page_route span.current{ text-shadow:0 1px 0 #fff; color:#999;}
+
 /*其他板块的标题背景*/
 .content .brands .top_title{ display:none;}
 .content .suppliers .top_title{ border-top:2px solid #53aff5;}
