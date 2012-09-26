@@ -114,6 +114,20 @@
                     </div>
                 </li>
             </ul>
+            <div class="paging_con clearfix">
+                <ul class="paging">
+                    <li class='total'>(95)</li>
+                    <li><span><a href='/order/index.php?page=1'>首页</a></span></li>
+                    <li><span><a href='/order/index.php?page=2'>上一页</a></span></li>
+                    <li><span><a href='/order/index.php?page=1'>1</a></span></li>
+                    <li><span><a href='/order/index.php?page=2'>2</a></span></li>
+                    <li class="current">3</li><li><span><a href='#'>4</a></span></li>
+                    <li><span><a href='/order/index.php?page=5'>5</a></span></li>
+                    <li><span><a href='/order/index.php?page=6'>6</a></span></li>
+                    <li><span><a href='/order/index.php?page=4'>下一页</a></span></li>
+                    <li><span><a href='/order/index.php?page=10'>末页</a></span></li>
+                </ul>
+            </div>
     	</div>
         <!--摘要列表 ends-->
     </div>

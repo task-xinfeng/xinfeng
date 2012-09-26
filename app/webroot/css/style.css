@@ -35,6 +35,17 @@
 .page_route span.arr{ padding:0 5px; color:#999;}
 .page_route span.current{ text-shadow:0 1px 0 #fff; color:#999;}
 
+/*分页样式*/
+.paging{ padding:5px 0; float:right; display:block;}
+.paging li{ float:left; margin:0 2px; font-size:12px;}
+.paging li.total{display:none;}
+.paging li.current{ margin:0 8px; padding:6px 10px;}
+.paging li span{ display:block; border:1px solid #f3f3f3; }
+.paging li span a{ display:inline-block; position:relative; padding:5px 10px; text-align:center; border:1px solid #fff; background:#f6f6f6; text-decoration:none; }
+.paging li span a:hover{ text-decoration:none; border:1px solid #97c0f5; background:#87b5f3; background:-moz-linear-gradient(center top, #88b6f3, #699cdf); background:-webkit-gradient(linear,left top,left bottom,from(#88b6f3),to(#699cdf)); color:#FFF; box-shadow:0 0 2px #555;}
+.paging li span a:active{ text-decoration:none; border:1px solid #97c0f5; background:#97c0f5; background:-moz-linear-gradient(center top, #7ca8e3, #97c0f5); background:-webkit-gradient(linear,left top,left bottom,from(#7ca8e3),to(#97c0f5)); color:#FFF;}
+.paging li span:hover{ border:1px solid #4883d1;}
+
 /*其他板块的标题背景*/
 .content .brands .top_title{ display:none;}
 .content .suppliers .top_title{ border-top:2px solid #53aff5;}
