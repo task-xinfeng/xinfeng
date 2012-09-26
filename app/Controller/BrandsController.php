@@ -21,4 +21,9 @@ class BrandsController extends AppController {
 	public function index() {
 		
 	}
+	
+	public function item() {
+		
+	}
+	
 }

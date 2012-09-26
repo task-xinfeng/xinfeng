@@ -126,7 +126,7 @@
 
 <!--新风品牌-->
 	<div class="block_center thumb_list_block suppliers clearfix">
-    	<div class="top_title">
+    	<div class="top_title top_title_blue">
             <h2>新风品牌</h2>
         </div>
     	<div class="main">
@@ -206,7 +206,7 @@
 
 <!--行业新闻-->
     <div class="block_center news_list_block news clearfix">
-    	<div class="top_title">
+    	<div class="top_title top_title_green">
             <h2>行业新闻</h2>
         </div>
         <div class="main">
@@ -253,7 +253,7 @@
 
 <!--推荐产品-->
 	<div class="block_center thumb_list_block products clearfix">
-    	<div class="top_title">
+    	<div class="top_title top_title_orange">
             <h2>推荐产品</h2>
         </div>
     	<div class="main">
