@@ -117,7 +117,34 @@
     </div>
 
 	<div class="cside">
-    	<div style="height:300px;"></div>
+    	
+        <div class="block_cside side_a_240 block_cside">
+        	
+        </div>
+        
+        <div class="cside_thumb_240_block block_cside ">
+        	<ul class="cside_thumb_240_ul">
+            	<li>
+                    <h2><a href="#">松下</a></h2>
+                    <div class="pic"><a href="#"><img src="#" width="240" height="218"/></a></div>
+                    <div class="figures clearfix">
+                        <div class="num_item">
+                            <span class="num"><a href="#">34</a></span>
+                            <div class="t">新风产品</div>
+                        </div>
+                        <div class="num_item">
+                            <span class="num"><a href="#">34</a></span>
+                            <div class="t">新风产品</div>
+                        </div>
+                        <div class="num_item">
+                            <span class="num"><a href="#">34</a></span>
+                            <div class="t">新风产品</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 
 </div>
