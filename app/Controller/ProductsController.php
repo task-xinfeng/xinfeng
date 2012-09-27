@@ -21,4 +21,7 @@ class ProductsController extends AppController {
 	public function index(){
 		
 	}
+	
+	public function item(){
+	}
 }

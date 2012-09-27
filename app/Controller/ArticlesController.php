@@ -24,4 +24,7 @@ class ArticlesController extends AppController {
 	
 	public function guides(){
 	}
+	
+	public function item(){
+	}
 }
