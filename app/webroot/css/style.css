@@ -41,9 +41,9 @@
 .paging li.current{ margin:0 8px; padding:6px 10px;}
 .paging li span{ display:block; border:1px solid #f3f3f3; }
 .paging li span a{ display:inline-block; position:relative; padding:5px 10px; text-align:center; border:1px solid #fff; background:#f6f6f6; text-decoration:none; }
-.paging li span a:hover{ text-decoration:none; border:1px solid #97c0f5; background:#87b5f3; background:-moz-linear-gradient(center top, #88b6f3, #699cdf); background:-webkit-gradient(linear,left top,left bottom,from(#88b6f3),to(#699cdf)); color:#FFF; box-shadow:0 0 2px #555;}
-.paging li span a:active{ text-decoration:none; border:1px solid #97c0f5; background:#97c0f5; background:-moz-linear-gradient(center top, #7ca8e3, #97c0f5); background:-webkit-gradient(linear,left top,left bottom,from(#7ca8e3),to(#97c0f5)); color:#FFF;}
-.paging li span:hover{ border:1px solid #4883d1;}
+.paging li span a:hover{ text-decoration:none; 2border:1px solid #97c0f5; background:#87b5f3; background:-moz-linear-gradient(center top, #88b6f3, #699cdf); background:-webkit-gradient(linear,left top,left bottom,from(#88b6f3),to(#699cdf)); color:#FFF; box-shadow:0 0 2px #555; background:#ccc;}
+.paging li span a:active{ text-decoration:none; 2border:1px solid #97c0f5; background:#97c0f5; background:-moz-linear-gradient(center top, #7ca8e3, #97c0f5); background:-webkit-gradient(linear,left top,left bottom,from(#7ca8e3),to(#97c0f5)); color:#FFF; background:#aaa;}
+.paging li span:hover{ border:1px solid #e7e7e7;}
 
 /*通用标题样式*/
 .top_title{ height:40px; margin-bottom:8px; border-top:2px solid #e96f6f; background:url(../img/block_center_top_title_bg.png) repeat-x; position:relative;}
