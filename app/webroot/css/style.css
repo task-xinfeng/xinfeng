@@ -166,6 +166,7 @@
 .summary_list li .smain .para a{ text-decoration:underline;}
 
 /*品牌详情页 brands/item*/
+.content.brands_item{ margin-bottom:0;}
 .brands_item_summary{ background:#ffffff;}
 .brands_item_summary .brands_item_title{ height:65px; border-bottom:1px solid #e7e7e7;}
 .brands_item_summary .brands_item_title span.t{ display:block; line-height:65px; height:65px; float:left; padding:0 15px;}
@@ -187,11 +188,14 @@
 .brands_item .news_con .list_con ul.list li span.date{ float:right; color:#666;}
 
 /*品牌详情页的经销商列表*/
-
-
-
-
-
+.dealer_list_block{ background:#fff; padding-bottom:20px; margin-bottom:0; border-bottom:1px solid #e7e7e7;}
+.dealer_list{ padding:0 15px;}
+.dealer_list li{ float:left; width:290px; height:90px; padding:25px 15px 15px 15px; border-bottom:1px dashed #e7e7e7;}
+.dealer_list li .title{ line-height:25px; font-size:14px;}
+.dealer_list li .title span.city{ font-size:12px; color:#666; margin-left:10px;}
+.dealer_list li .tel,.dealer_list li .addr{ font-family:12px; padding:2px 0; line-height:16px;}
+.dealer_list li .tel span.t,.dealer_list li .addr span.t{ color:#666;}
+.dealer_list li .tel span.tel_num{ color:#c00;}
 
 
 

@@ -134,9 +134,42 @@
     <!--新闻列表 & 导购列表 ends-->
     
     <!--经销商列表-->
-    <div class="block_center dealer_list_block clearfix">
-		
-
+    <div class="block_center dealer_list_block">
+    	<div class="top_title top_title_orange">
+        	<h2>经销商</h2>
+        </div>
+    	<ul class="dealer_list clearfix">
+			<li>
+            	<p class="title">供应商名称供应商名称<span class="city">北京</span></p>
+                <p class="tel"><span class="t">电话：</span><span class="tel_num">9809890809</span></p>
+                <p class="addr"><span class="t">地址：</span>北京市朝阳区三元桥XX大楼893号</p>
+            </li>
+            <li>
+            	<p class="title">供应商名称供应商名称<span class="city">北京</span></p>
+                <p class="tel"><span class="t">电话：</span><span class="tel_num">9809890809</span></p>
+                <p class="addr"><span class="t">地址：</span>北京市朝阳区三元桥XX大楼893号</p>
+            </li>
+            <li>
+            	<p class="title">供应商名称供应商名称<span class="city">北京</span></p>
+                <p class="tel"><span class="t">电话：</span><span class="tel_num">9809890809</span></p>
+                <p class="addr"><span class="t">地址：</span>北京市朝阳区三元桥XX大楼893号</p>
+            </li>
+            <li>
+            	<p class="title">供应商名称供应商名称<span class="city">北京</span></p>
+                <p class="tel"><span class="t">电话：</span><span class="tel_num">9809890809</span></p>
+                <p class="addr"><span class="t">地址：</span>北京市朝阳区三元桥XX大楼893号</p>
+            </li>
+            <li>
+            	<p class="title">供应商名称供应商名称<span class="city">北京</span></p>
+                <p class="tel"><span class="t">电话：</span><span class="tel_num">9809890809</span></p>
+                <p class="addr"><span class="t">地址：</span>北京市朝阳区三元桥XX大楼893号</p>
+            </li>
+            <li>
+            	<p class="title">供应商名称供应商名称<span class="city">北京</span></p>
+                <p class="tel"><span class="t">电话：</span><span class="tel_num">9809890809</span></p>
+                <p class="addr"><span class="t">地址：</span>北京市朝阳区三元桥XX大楼893号</p>
+            </li>
+        </ul>
     </div>
     <!--经销商列表 ends-->
 
