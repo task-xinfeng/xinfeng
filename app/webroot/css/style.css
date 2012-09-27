@@ -240,8 +240,8 @@
 .content.about .about_menu li{}
 .content.about .about_menu li a{ display:block; padding:15px;}
 .content.about .about_menu li a:hover{ background:#fafafa; color:#de210e; text-decoration:none;}
-.content.about .about_menu li.current a{ background:#fefefe;}
-.content.about .about_menu li.current a:hover{ background:#fefefe; color:#333;}
+.content.about .about_menu li a.current{ background:#fefefe;}
+.content.about .about_menu li a.current:hover{ background:#fefefe; color:#333;}
 
 
 
