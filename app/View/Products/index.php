@@ -32,7 +32,7 @@
                     </dl>
                     <div class="smain clearfix">
                     	<div class="thumb">
-                        	<img src="#" />
+                        	<img src="#" width="200" height="200" />
                         </div>
                         <div class="para">
                         	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
@@ -50,7 +50,7 @@
                     </dl>
                     <div class="smain clearfix">
                     	<div class="thumb">
-                        	<img src="#" />
+                        	<img src="#" width="200" height="200" />
                         </div>
                         <div class="para">
                         	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
@@ -68,7 +68,7 @@
                     </dl>
                     <div class="smain clearfix">
                     	<div class="thumb">
-                        	<img src="#" />
+                        	<img src="#" width="200" height="200" />
                         </div>
                         <div class="para">
                         	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
@@ -86,7 +86,7 @@
                     </dl>
                     <div class="smain clearfix">
                     	<div class="thumb">
-                        	<img src="#" />
+                        	<img src="#" width="200" height="200" />
                         </div>
                         <div class="para">
                         	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
@@ -104,7 +104,7 @@
                     </dl>
                     <div class="smain clearfix">
                     	<div class="thumb">
-                        	<img src="#" />
+                        	<img src="#" width="200" height="200" />
                         </div>
                         <div class="para">
                         	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
