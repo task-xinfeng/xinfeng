@@ -231,9 +231,17 @@
 .dealer_list li .tel span.tel_num{ color:#c00;}
 
 /*about通用样式*/
-
-
-
+.content.about .cmain{ float:right;}
+.content.about .cside{ float:left; width:260px;}
+.content.about .about_detail{ padding:15px 30px; background:#fefefe;}
+.content.about .about_detail h2.title{ font-size:24px; line-height:30px; text-align:center; margin-bottom:40px;}
+.content.about .about_detail p{ font-size:14px; line-height:24px; margin-bottom:0.5em; text-indent:2em;}
+.content.about .about_menu{ padding-left:25px;}
+.content.about .about_menu li{}
+.content.about .about_menu li a{ display:block; padding:15px;}
+.content.about .about_menu li a:hover{ background:#fafafa; color:#de210e; text-decoration:none;}
+.content.about .about_menu li.current a{ background:#fefefe;}
+.content.about .about_menu li.current a:hover{ background:#fefefe; color:#333;}
 
 
 
