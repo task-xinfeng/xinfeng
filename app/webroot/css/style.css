@@ -25,7 +25,13 @@
 .content .block_center .side .a{ border:1px solid #e7e7e7; height:298px; background:#f7f7f7; margin-bottom:10px;}
 .content .block_center .side .a_s{ height:98px; margin-bottom:0;}
 .content .cmain{ float:left; width:730px; background:#fefefe;}
-.content .cside{ float:right; width:240px; background:#fefefe;}
+.content .cside{ float:right; width:240px; 2background:#fefefe;}
+
+/*边栏通用*/
+.block_cside{ margin-bottom:20px;}
+
+/*边栏广告*/
+.side_a_240{ height:200px; background:#fefefe;}
 
 .content.index{ margin-bottom:0;}
 
@@ -149,6 +155,18 @@
 .thumb_240_ul li .pic{ width:240px; height:225px; padding-bottom:10px; border-bottom:1px dashed #e7e7e7;}
 .thumb_240_ul li .t{ height:40px; overflow:hidden;}
 .thumb_240_ul li .t a{ font-size:12px; line-height:16px; padding:5px 10px; display:block; font-weight:normal; color:#666;}
+
+/*边栏缩略图列表 每一项宽度为24px*/
+.cside_thumb_240_block{}
+.cside_thumb_240_ul{}
+.cside_thumb_240_ul li{width:240px; background:#fff; position:relative; margin-bottom:15px;}
+.cside_thumb_240_ul li h2{ height:22px; padding:10px;}
+.cside_thumb_240_ul li h2 a{ font-size:16px; line-height:22px; color:#666;}
+.cside_thumb_240_ul li .pic{ width:240px; height:218px; overflow:hidden; background:#f7f7f7;}
+.cside_thumb_240_ul li .figures{ padding:10px 15px 10px 15px;}
+.cside_thumb_240_ul li .figures .num_item{ width:60px; float:left; margin-right:10px;}
+.cside_thumb_240_ul li .figures .num_item .num a{ display:block; height:30px; line-height:30px; border-bottom:1px solid#eee; color:#666; font-size:20px; font-family:Arial, Helvetica, sans-serif; text-align:center;}
+.cside_thumb_240_ul li .figures .num_item .t{ font-size:12px; height:25px; line-height:25px; text-align:center; color:#999}
 
 /*带有摘要的产品列表*/
 .summary_list_block { padding:15px;}
