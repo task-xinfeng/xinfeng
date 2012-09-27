@@ -24,7 +24,7 @@
     	<div class="summary_list_block">	
         	<ul class="summary_list">
             	<li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
+                	<h2 class="stitle"><a href="#" target="_blank">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></h2>
                     <dl class="sinfo clearfix">
                     	<dd class="brand"><span class="icon"></span>松下</dd>
                         <dd class="total"><span class="icon"></span>2342次浏览</dd>
@@ -42,7 +42,7 @@
                     </div>
                 </li>
                 <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
+                	<h2 class="stitle"><a href="#" target="_blank">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></h2>
                     <dl class="sinfo clearfix">
                     	<dd class="brand"><span class="icon"></span>松下</dd>
                         <dd class="total"><span class="icon"></span>2342次浏览</dd>
@@ -60,7 +60,7 @@
                     </div>
                 </li>
                 <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
+                	<h2 class="stitle"><a href="#" target="_blank">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></h2>
                     <dl class="sinfo clearfix">
                     	<dd class="brand"><span class="icon"></span>松下</dd>
                         <dd class="total"><span class="icon"></span>2342次浏览</dd>
@@ -78,7 +78,7 @@
                     </div>
                 </li>
                 <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
+                	<h2 class="stitle"><a href="#" target="_blank">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></h2>
                     <dl class="sinfo clearfix">
                     	<dd class="brand"><span class="icon"></span>松下</dd>
                         <dd class="total"><span class="icon"></span>2342次浏览</dd>
@@ -95,24 +95,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
-                    <dl class="sinfo clearfix">
-                    	<dd class="brand"><span class="icon"></span>松下</dd>
-                        <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                        <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
-                    </dl>
-                    <div class="smain clearfix">
-                    	<div class="thumb">
-                        	<img src="#" width="200" height="200" />
-                        </div>
-                        <div class="para">
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
-                        </div>
-                    </div>
-                </li>
+
             </ul>
             <div class="paging_con clearfix">
                 <ul class="paging">

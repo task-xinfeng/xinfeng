@@ -168,10 +168,11 @@
 .cside_thumb_240_ul li .figures .num_item .num a{ display:block; height:30px; line-height:30px; border-bottom:1px solid#eee; color:#666; font-size:20px; font-family:Arial, Helvetica, sans-serif; text-align:center;}
 .cside_thumb_240_ul li .figures .num_item .t{ font-size:12px; height:25px; line-height:25px; text-align:center; color:#999}
 
-/*带有摘要的产品列表*/
+/*带有摘要的文章列表*/
 .summary_list_block { padding:15px;}
 .summary_list li{ padding:0 0 20px 0; border-bottom:1px dashed #e7e7e7; margin-bottom:20px;}
 .summary_list li h2.stitle{ font-size:22px; line-height:28px; margin-bottom:10px; padding:3px 5px;}
+.summary_list li h2.stitle a{ font-size:22px; line-height:28px;}
 .summary_list li .sinfo{ margin-bottom:15px;}
 .summary_list li .sinfo dd{ float:left; height:25px; padding:0; line-height:25px; margin-right:10px;}
 .summary_list li .sinfo dd span.icon{ float:left; display:block; width:15px; height:15px; background:url(../img/mix_bg.png) 0 -380px no-repeat; margin-right:3px; position:relative; top:5px;}
@@ -182,6 +183,20 @@
 .summary_list li .smain .para{ font-size:14px;}
 .summary_list li .smain .para p{ font-size:14px; line-height:22px; text-indent:2em; margin-bottom:1em; color:#444;}
 .summary_list li .smain .para a{ text-decoration:underline;}
+
+/*文章详情样式*/
+.article_detail{ padding:15px; margin-bottom:20px;}
+.article_detail h2.stitle{ font-size:22px; line-height:28px; margin-bottom:10px; padding:3px 5px;}
+.article_detail h2.stitle a{ font-size:22px; line-height:28px;}
+.article_detail .sinfo{ margin-bottom:15px;}
+.article_detail .sinfo dd{ float:left; height:25px; padding:0; line-height:25px; margin-right:10px;}
+.article_detail .sinfo dd span.icon{ float:left; display:block; width:15px; height:15px; background:url(../img/mix_bg.png) 0 -380px no-repeat; margin-right:3px; position:relative; top:5px;}
+.article_detail .sinfo dd.total span.icon{ background-position:-15px -380px;}
+.article_detail .sinfo dd.date span.icon{ background-position:-30px -380px;}
+.article_detail .smain .thumb{ float:left; width:200px; height:200px; border:1px solid #e7e7e7; background:#e7e7e7; margin: 0 15px 15px 0;}
+.article_detail .smain .para{ font-size:14px;}
+.article_detail .smain .para p{ font-size:14px; line-height:22px; text-indent:2em; margin-bottom:1em; color:#444;}
+.article_detail .smain .para a{ text-decoration:underline;}
 
 /*品牌详情页 brands/item*/
 .content.brands_item{ margin-bottom:0;}
