@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title><?php echo $title_for_layout;?></title>
 <?php echo $this->Html->css(array('style')); ?>
-<?php echo $this->Html->script(array('jquery-1.7.2','main')); ?>
+<?php echo $this->Html->script(array('jquery-1.7.2','tools','main')); ?>
 </head>
 <body>
 <?php echo $this->element('classic_header'); ?> 
