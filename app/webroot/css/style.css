@@ -1,14 +1,19 @@
 @charset "UTF-8";
 @import url(public.css);
-.header_w{}
+/*.header_w{ margin-bottom:20px; height:47px; background:url(../img/header_w_bg.png) repeat-x;}
+.header{ height:45px; position:relative;}*/
 .header{ height:80px; position:relative;}
-.header .logo{ width:120px; height:43px; position:absolute; left:0; top:18px; background:url(../img/logo.png) no-repeat;}
+.header .logo{ width:120px; height:43px; position:absolute; left:0; top:20px; background:url(../img/logo.png) no-repeat;}
+.header .logo a{ height:43px; width:120px; display:block;}
 .header .header_nav{ position:absolute; top:25px; right:0;}
 .header .header_nav .header_nav_ul{}
 .header .header_nav .header_nav_ul li{ float:left;}
 .header .header_nav .header_nav_ul li a{ font-size:14px; color:#666; text-shadow:0 1px 0 #fff; padding:7px 15px; display:inline-block;}
 
-/*首页图片轮播*/
+/*首页顶部广告*/
+.big_top_intro{ width:1319px; height:384px; margin:0 auto 20px auto; margin-top:-21px;}
+
+/*顶部图片轮播*/
 .p_slide{ height:250px; position:relative; overflow:hidden; box-shadow:0 0 5px #ccc;}
 .p_slide .p_ul{ position:absolute; width:990px; left:0; top:0;}
 .p_slide .p_ul li{ height:250px; background:#f7f7f7;}

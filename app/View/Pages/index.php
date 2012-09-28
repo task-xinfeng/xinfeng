@@ -1,31 +1,26 @@
-<div class="content block_center index">
-<!--pics slide-->
+<!--big_top_intro-->
+<!--<div class="big_top_intro">
+	<a href="#">
+    	<img src="http://xinfeng/app/webroot/img/big_top_intro.jpg" width="1319" height="384" />
+    </a>
+</div>-->
+<!--big_top_intro-->
+
+<!--top 广告-->
 <div class="p_slide block_center">
 	<ul class="p_ul">
     	<li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
-        	<a href="#"><img src="#" /></a>
-        </li>
-        <li>
         	<a href="#"><img src="#" /></a>
         </li>
     </ul>
     <ul class="c_ul clearfix">
     	<li>1</li>
         <li class="current">2</li>
-        <li>3</li>
-        <li>4</li>
     </ul>
 </div>
-<!--pics slide ends-->
+<!--top 广告 ends-->
+
+<div class="content block_center index">
 <!--供应商-->
     <div class="block_center thumb_list_block thumb_list_block_opposite brands clearfix">
     	<div class="top_title">
@@ -399,7 +394,7 @@
 
 <!--底部加入-->
 	<div class="block_center join_bottom">
-    	<a href="#" class="join_link"></a>
+    	<a href="<?php echo $this->Html->url(array("controller" => "pages","action" => "about","?"=>array("about_index" => 2)));?>" class="join_link"></a>
     </div>
 <!--底部加入 ends-->
 

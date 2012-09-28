@@ -1,3 +1,4 @@
+<div class="header_w">
 <div class="header block_center">
 	<div class="logo">
     	<a href="#"></a>
@@ -31,4 +32,5 @@
 			</li>
         </ul>
     </div>
+</div>
 </div>
