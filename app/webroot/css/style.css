@@ -130,8 +130,9 @@
 
 /*footer样式*/
 .footer{ margin-bottom:0; padding:20px 0; border-top:1px solid #fff;}
-.footer .links{ text-align:center; padding:15px 0;}
+.footer .links{ text-align:center; padding:15px 0 5px 0;}
 .footer .links a{ padding:0 10px;}
+.footer .copyright{ text-align:center; color:#666;}
 
 /*缩略图列表 每一项宽度为320px*/
 .thumb_320_block{}

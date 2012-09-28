@@ -14,6 +14,6 @@
 			联系方式
 		</a> 
 	</div>
-    <div class="copyright"></div>
+    <div class="copyright">&copy;2012 新风网 (<a href="http://www.xinfengs.com">www.xinfengs.com</a>) 版权所有</div>
   </div>
 </div>
