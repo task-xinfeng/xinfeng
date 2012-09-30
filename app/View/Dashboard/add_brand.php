@@ -6,7 +6,7 @@
 		<form class="form-horizontal" action="<?php echo $this->webroot?>dashboard/saveBrand" method="POST" enctype="multipart/form-data">
 			<fieldset>
 				<div class="control-group" id="name-ctrl-grp">
-					<label class="control-label">品牌名称（必填）</label>
+					<label class="control-label">品牌名称（中英文，必填）</label>
 					<div class="controls">
 						<input type="text" class="input-xlarge" id="name" value="" name="name">
 						<span class="help-inline"></span>
@@ -15,9 +15,17 @@
 				<div class="control-group" id="logo-ctrl-grp">
 					<label class="control-label">品牌LOGO(必填)</label>
 					<div class="controls">
+						<input type="file" class="input-file" id="logo" name="logo">
+						<span class="help-inline"></span>
+						<span class="help-inline2">注意，图片格式为jpg或者png，尺寸320*290</span>
+					</div>
+				</div>
+				<div class="control-group" id="logo-ctrl-grp">
+					<label class="control-label">品牌Avatar(必填)</label>
+					<div class="controls">
 						<input type="file" class="input-file" id="avatar" name="avatar">
 						<span class="help-inline"></span>
-						<span class="help-inline2">注意，图片格式为jpg或者png，尺寸150*58</span>
+						<span class="help-inline2">注意，图片格式为jpg或者png，尺寸320*290</span>
 					</div>
 				</div>
 				<div class="control-group" id="intro-ctrl-grp">

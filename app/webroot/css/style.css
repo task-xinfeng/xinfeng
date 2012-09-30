@@ -50,6 +50,8 @@
 .paging li{ float:left; margin:0 2px; font-size:12px;}
 .paging li.total{display:none;}
 .paging li.current{ margin:0 8px; padding:6px 10px;}
+.paging li span.current{ margin:0 8px; padding:6px 10px;}
+.paging li span.hide{ display:none;}
 .paging li span{ display:block; border:1px solid #f3f3f3; }
 .paging li span a{ display:inline-block; position:relative; padding:5px 10px; text-align:center; border:1px solid #fff; background:#f6f6f6; text-decoration:none; }
 .paging li span a:hover{ text-decoration:none; 2border:1px solid #97c0f5; background:#87b5f3; background:-moz-linear-gradient(center top, #88b6f3, #699cdf); background:-webkit-gradient(linear,left top,left bottom,from(#88b6f3),to(#699cdf)); color:#FFF; box-shadow:0 0 2px #555; background:#ccc;}

@@ -9,6 +9,11 @@ class DashboardController extends AppController {
 	public $components = array('Session', 'Cookie', 'Upload');
 	public $helpers = array('Form', 'Html', 'Js', 'Time', 'Phpthumb', 'StringUtil');
 	
+	var $avatarTempExt = 'jpg';
+	var $avatarSize = '409200000';
+	var $avatarMaxWidth = 2000;
+	var $avatarMaxHeight = 2000;
+	
 	public function index(){
 		$this->redirect(array('controller' => 'dashboard', 'action' => 'brands'));die();
 	}
@@ -37,14 +42,14 @@ class DashboardController extends AppController {
 	public function saveBrand(){
 		$this->layout = null;
 		$handle = $this->Upload;
-		$handle->upload($_FILES['avatar']);
+		$handle->upload($_FILES['logo']);
 		$logoPath = '';
 		if($handle->uploaded) {
 			$handle->image_resize = true;
 			$handle->image_ratio_no_zoom_in = true;
-			/*$handle->image_x = $this->avatarMaxWidth;
+			$handle->image_x = $this->avatarMaxWidth;
 			$handle->image_y = $this->avatarMaxHeight;
-			$handle->file_max_size = $this->avatarSize;*/
+			$handle->file_max_size = $this->avatarSize;
 			$handle->file_new_name_body = time();
 			//$handle->file_overwrite	= true;	// file overwrite. forbidden, because of the explorer's cache
 			$handle->mime_check	= true;	// MIME-Type check
@@ -60,12 +65,37 @@ class DashboardController extends AppController {
 		} else {
 			
 		}
+		$handle2 = $this->Upload;
+		$handle2->upload($_FILES['avatar']);
+		$avatarPath = '';
+		if($handle2->uploaded) {
+			$handle2->image_resize = true;
+			$handle2->image_ratio_no_zoom_in = true;
+			$handle2->image_x = $this->avatarMaxWidth;
+			$handle2->image_y = $this->avatarMaxHeight;
+			$handle2->file_max_size = $this->avatarSize;
+			$handle2->file_new_name_body = time();
+			//$handle2->file_overwrite	= true;	// file overwrite. forbidden, because of the explorer's cache
+			$handle2->mime_check	= true;	// MIME-Type check
+			$handle2->allowed = array('image/*'); // Only image
+			/*$handle2->image_convert = $this->avatarTempExt;*/
+			$destination = WWW_ROOT . IMAGE_ROOT . BRAND;
+			$handle2->Process($destination); // Copy the file from temp to disk on server
+			if ($handle2->processed) { // Check wether the copying success
+				$avatarPath = $handle2->file_dst_name;
+			} else {
+				
+			}
+		} else {
+			
+		}
 		
 		//TODO这里应该是在图片上传无误的情况下才写数据库，但是非高压力情况下也无所谓了
 		$this->Brand->Create();
 		$brandData = array();
 		$brandData['Brand']['name'] = $this->request->data['name'];
 		$brandData['Brand']['logo'] = $logoPath;
+		$brandData['Brand']['avatar'] = $avatarPath;
 		$brandData['Brand']['intro'] = $this->request->data['intro'];
 		$brandData['Brand']['url'] = $this->request->data['url'];
 		$brandData['Brand']['weight'] = 0;
@@ -91,9 +121,9 @@ class DashboardController extends AppController {
 			if($handle->uploaded) {
 				$handle->image_resize = true;
 				$handle->image_ratio_no_zoom_in = true;
-				/*$handle->image_x = $this->avatarMaxWidth;
+				$handle->image_x = $this->avatarMaxWidth;
 				$handle->image_y = $this->avatarMaxHeight;
-				$handle->file_max_size = $this->avatarSize;*/
+				$handle->file_max_size = $this->avatarSize;
 				$handle->file_new_name_body = time();
 				//$handle->file_overwrite	= true;	// file overwrite. forbidden, because of the explorer's cache
 				$handle->mime_check	= true;	// MIME-Type check
@@ -195,9 +225,9 @@ class DashboardController extends AppController {
 		if($handle->uploaded) {
 			$handle->image_resize = true;
 			$handle->image_ratio_no_zoom_in = true;
-			/*$handle->image_x = $this->avatarMaxWidth;
+			$handle->image_x = $this->avatarMaxWidth;
 			$handle->image_y = $this->avatarMaxHeight;
-			$handle->file_max_size = $this->avatarSize;*/
+			$handle->file_max_size = $this->avatarSize;
 			$handle->file_new_name_body = time();
 			//$handle->file_overwrite	= true;	// file overwrite. forbidden, because of the explorer's cache
 			$handle->mime_check	= true;	// MIME-Type check
@@ -243,9 +273,9 @@ class DashboardController extends AppController {
 			if($handle->uploaded) {
 				$handle->image_resize = true;
 				$handle->image_ratio_no_zoom_in = true;
-				/*$handle->image_x = $this->avatarMaxWidth;
+				$handle->image_x = $this->avatarMaxWidth;
 				$handle->image_y = $this->avatarMaxHeight;
-				$handle->file_max_size = $this->avatarSize;*/
+				$handle->file_max_size = $this->avatarSize;
 				$handle->file_new_name_body = time();
 				//$handle->file_overwrite	= true;	// file overwrite. forbidden, because of the explorer's cache
 				$handle->mime_check	= true;	// MIME-Type check

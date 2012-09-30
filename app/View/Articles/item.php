@@ -1,6 +1,10 @@
 <!--面包屑-->
 <div class="page_route block_center">
-	<a href="#">首页</a><span class="arr">&rArr;</span><a href="#">新风产品</a><span class="arr">&rArr;</span><span class="current">新风产品</span>
+	<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item"));?>">首页</a>
+	<span class="arr">/</span>
+	<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $article['Brand']['id'])));?>"><?php echo $article['Brand']['name'];?></a>
+	<span class="arr">/</span>
+	<?php echo $article['Article']['title'];?>
 </div>
 <!--面包屑 ends-->
 
@@ -8,17 +12,19 @@
 	<div class="cmain">
     	
         <div class="article_detail">
-			<h2 class="stitle"><a href="#" target="_blank">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</a></h2>
+			<h2 class="stitle"><?php echo $article['Article']['title'];?></h2>
                 <dl class="sinfo clearfix">
-                    <dd class="brand"><span class="icon"></span>松下</dd>
-                    <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                    <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
+                    <dd class="brand"><span class="icon"></span><?php echo $article['Brand']['name'];?></dd>
+                    <dd class="total"><span class="icon"></span>
+						<?php echo $article['Article']['clicks'];?>次浏览
+					</dd>
+                    <dd class="date"><span class="icon"></span>
+						<?php echo date('Y年m月d日', strtotime($article['Article']['created'])); ?>
+					</dd>
                 </dl>
                 <div class="smain clearfix">
                     <div class="para">
-                        <p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        <p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        <p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
+                        <?php echo $article['Article']['content'];?>
                     </div>
                 </div>
     	</div>
@@ -26,30 +32,34 @@
     </div>
     
     <div class="cside">
-    	
-        <div class="block_cside side_a_240 block_cside">
-        	
-        </div>
         
         <div class="cside_thumb_240_block block_cside ">
         	<ul class="cside_thumb_240_ul">
             	<li>
-                    <h2><a href="#">松下</a></h2>
-                    <div class="pic"><a href="#"><img src="#" width="240" height="218"/></a></div>
-                    <div class="figures clearfix">
-                        <div class="num_item">
-                            <span class="num"><a href="#">34</a></span>
-                            <div class="t">新风产品</div>
-                        </div>
-                        <div class="num_item">
-                            <span class="num"><a href="#">34</a></span>
-                            <div class="t">新风产品</div>
-                        </div>
-                        <div class="num_item">
-                            <span class="num"><a href="#">34</a></span>
-                            <div class="t">新风产品</div>
-                        </div>
-                    </div>
+                    <h2>
+						<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $article['Brand']['id'])));?>">
+							<?php echo $article['Brand']['name'];?>
+						</a>
+					</h2>
+                    <div class="pic">
+						<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $article['Brand']['id'])));?>">
+							<?php
+								$thumbnail = $this->Phpthumb->generate(
+									array(
+										'save_path' => WWW_ROOT . IMAGE_ROOT . 'thumbs',     
+										'display_path' => '/' . IMAGE_ROOT . 'thumbs',  
+										'error_image_path' => '/' . IMAGE_ROOT  . 'default.jpg',
+										'src' => WWW_ROOT . IMAGE_ROOT . BRAND . $article['Brand']['logo'],
+										'w' => 240, 
+										'h' => 218,
+										'q' => 100,
+										'zc' => 1
+									)
+								);
+							?>
+							<?php echo $this->Html->image($thumbnail['src'], array('width' => $thumbnail['w'], 'height' => $thumbnail['h'])); ?>
+						</a>
+					</div>
                 </li>
             </ul>
         </div>

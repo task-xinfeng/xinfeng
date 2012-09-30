@@ -14,7 +14,17 @@
 
 <!--面包屑-->
 <div class="page_route block_center">
-	<a href="#">首页</a><span class="arr">&rArr;</span><a href="#">新风产品</a><span class="arr">&rArr;</span><span class="current">新风产品</span>
+	<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item"));?>">首页</a>
+		<span class="arr">/</span>
+	<?php if(isset($brand)){?>
+		<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $brand['Brand']['id'])));?>"><?php echo $brand['Brand']['name'];?></a>
+		<span class="arr">/</span>
+		<span class="current">行业新闻</span>
+	<?php }else{?>
+		<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "news"));?>">
+			行业新闻
+		</a>
+	<?php }?>
 </div>
 <!--面包屑 ends-->
 <div class="content block_center news clearfix">
@@ -22,94 +32,55 @@
     	<!--摘要列表-->
     	<div class="summary_list_block">	
         	<ul class="summary_list without_thumb">
+				<?php foreach($news as $newItem):?>
             	<li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
+                	<h2 class="stitle">
+						<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "item", "?"=>array("aid" => $newItem['Article']['id'])));?>" target="__blank">
+							<?php echo $newItem['Article']['title'];?>
+						</a>
+					</h2>
                     <dl class="sinfo clearfix">
-                    	<dd class="brand"><span class="icon"></span>松下</dd>
-                        <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                        <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
+                    	<dd class="brand"><span class="icon"></span>
+							<?php echo $newItem['Brand']['name'];?>
+						</dd>
+                        <dd class="total"><span class="icon"></span>
+							<?php echo $newItem['Article']['clicks'];?>次浏览
+						</dd>
+                        <dd class="date"><span class="icon"></span>
+							<?php echo date('Y年m月d日', strtotime($newItem['Article']['created'])); ?>
+						</dd>
                     </dl>
                     <div class="smain clearfix">
                         <div class="para">
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
+                        	<?php echo $newItem['Article']['content'];?>
                         </div>
                     </div>
                 </li>
-                <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
-                    <dl class="sinfo clearfix">
-                    	<dd class="brand"><span class="icon"></span>松下</dd>
-                        <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                        <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
-                    </dl>
-                    <div class="smain clearfix">
-                        <div class="para">
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
-                    <dl class="sinfo clearfix">
-                    	<dd class="brand"><span class="icon"></span>松下</dd>
-                        <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                        <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
-                    </dl>
-                    <div class="smain clearfix">
-                        <div class="para">
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
-                    <dl class="sinfo clearfix">
-                    	<dd class="brand"><span class="icon"></span>松下</dd>
-                        <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                        <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
-                    </dl>
-                    <div class="smain clearfix">
-                        <div class="para">
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                	<h2 class="stitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h2>
-                    <dl class="sinfo clearfix">
-                    	<dd class="brand"><span class="icon"></span>松下</dd>
-                        <dd class="total"><span class="icon"></span>2342次浏览</dd>
-                        <dd class="date"><span class="icon"></span>2012年1月23日 星期三</dd>
-                    </dl>
-                    <div class="smain clearfix">
-                        <div class="para">
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测试段落测试段落测试段落。</p>
-                        	<p>测试段落测试段落测试段落测试段落测试段落测试段落，测试段落测试段测试段落测试段落测试段落，测试段落测试段落测测试段落测试段落测试段落，测试段落测试段落测落测试段落测试段落测试段落。</p>
-                        </div>
-                    </div>
-                </li>
+				<?php endforeach;?>
             </ul>
             <div class="paging_con clearfix">
                 <ul class="paging">
-                    <li class='total'>(95)</li>
-                    <li><span><a href='/order/index.php?page=1'>首页</a></span></li>
-                    <li><span><a href='/order/index.php?page=2'>上一页</a></span></li>
-                    <li><span><a href='/order/index.php?page=1'>1</a></span></li>
-                    <li><span><a href='/order/index.php?page=2'>2</a></span></li>
-                    <li class="current">3</li><li><span><a href='#'>4</a></span></li>
-                    <li><span><a href='/order/index.php?page=5'>5</a></span></li>
-                    <li><span><a href='/order/index.php?page=6'>6</a></span></li>
-                    <li><span><a href='/order/index.php?page=4'>下一页</a></span></li>
-                    <li><span><a href='/order/index.php?page=10'>末页</a></span></li>
+                    <?php
+						if(isset($brand)){
+							$this->Paginator->options(array(
+								'url'=> array('controller'=>'articles', 'action'=>'news/bid:'.$brand['Brand']['id'])
+							));
+						}else{
+							$this->Paginator->options(array(
+								'url'=> array('controller'=>'articles', 'action'=>'news')
+							));
+						}
+					?>
+					<?php
+						if(count($news) >= 1){
+							echo "<li>".$this->Paginator->first("首页")."</li>";
+							echo "<li>".$this->Paginator->prev("上一页", null, null, array('class' => 'hide'))."</li>";
+							echo "<li>".$this->Paginator->numbers(array('separator'=>'</li><li>'))."</li>";
+							echo "<li>".$this->Paginator->next("下一页", null, null, array('class' => 'hide'))."</li>";
+							echo "<li>".$this->Paginator->last("末页")."</li>";
+							//echo $this->Paginator->counter(array('format' => '%page%/%pages%'));
+						}
+					?>
                 </ul>
             </div>
     	</div>
@@ -117,33 +88,68 @@
     </div>
 
 	<div class="cside">
-    	
+    	<?php if(!isset($brand)){?>
         <div class="block_cside side_a_240 block_cside">
         	
         </div>
-        
+        <?php }else{?>
         <div class="cside_thumb_240_block block_cside ">
         	<ul class="cside_thumb_240_ul">
             	<li>
-                    <h2><a href="#">松下</a></h2>
-                    <div class="pic"><a href="#"><img src="#" width="240" height="218"/></a></div>
+                    <h2>
+						<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $brand['Brand']['id'])));?>">
+							<?php echo $brand['Brand']['name'];?>
+						</a>
+					</h2>
+                    <div class="pic">
+						<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $brand['Brand']['id'])));?>">
+							<?php
+								$thumbnail = $this->Phpthumb->generate(
+									array(
+										'save_path' => WWW_ROOT . IMAGE_ROOT . 'thumbs',     
+										'display_path' => '/' . IMAGE_ROOT . 'thumbs',  
+										'error_image_path' => '/' . IMAGE_ROOT  . 'default.jpg',
+										'src' => WWW_ROOT . IMAGE_ROOT . BRAND . $brand['Brand']['logo'],
+										'w' => 240, 
+										'h' => 218,
+										'q' => 100,
+										'zc' => 1
+									)
+								);
+							?>
+							<?php echo $this->Html->image($thumbnail['src'], array('width' => $thumbnail['w'], 'height' => $thumbnail['h'])); ?>
+						</a>
+					</div>
                     <div class="figures clearfix">
                         <div class="num_item">
-                            <span class="num"><a href="#">34</a></span>
+                            <span class="num">
+								<a href="<?php echo $this->Html->url(array("controller" => "products","action" => "index", "?"=>array("bid" => $brand['Brand']['id'])));?>">
+									<?php echo count($brand['Product']);?>
+								</a>
+							</span>
                             <div class="t">新风产品</div>
                         </div>
                         <div class="num_item">
-                            <span class="num"><a href="#">34</a></span>
-                            <div class="t">新风产品</div>
+                            <span class="num">
+								<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "news", "?"=>array("bid" => $brand['Brand']['id'])));?>">
+									<?php echo count($brand['Article']);?>
+								</a>
+							</span>
+                            <div class="t">新闻导购</div>
                         </div>
                         <div class="num_item">
-                            <span class="num"><a href="#">34</a></span>
-                            <div class="t">新风产品</div>
+                            <span class="num">
+								<a href="javascript:void(0);">
+									<?php echo count($brand['BrandDealerMap']);?>
+								</a>
+							</span>
+                            <div class="t">经销商</div>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
+		<?php }?>
         
     </div>
 
