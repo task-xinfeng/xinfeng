@@ -70,7 +70,8 @@
 							<?php echo $this->Html->image($thumbnail['src'], array('width' => $thumbnail['w'], 'height' => $thumbnail['h'])); ?>
                         </div>
                         <div class="para">
-                        	<p><?php echo $this->StringUtil->sysSubStr($product['Product']['intro'],800);?></p>
+                        	<p><?php //echo $this->StringUtil->sysSubStr($product['Product']['intro'],800);?></p>
+							<p><?php echo $this->StringUtil->blog_summary($product['Product']['intro'],400);?></p>
                         </div>
                     </div>
                 </li>

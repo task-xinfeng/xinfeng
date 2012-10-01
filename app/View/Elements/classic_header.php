@@ -1,7 +1,7 @@
 <div class="header_w">
 <div class="header block_center">
 	<div class="logo">
-    	<a href="#"></a>
+    	<a href="<?php echo $this->webroot;?>"></a>
     </div>
 	<div class="header_nav">
     	<ul class="header_nav_ul clearfix">

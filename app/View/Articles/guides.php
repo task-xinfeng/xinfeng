@@ -52,15 +52,7 @@
                     </dl>
                     <div class="smain clearfix">
                         <div class="para">
-                        	<?php //echo $guide['Article']['content'];?>
-							<?php 
-								preg_match("<img.*src=[\"](.*?)[\"].*?>",$guide['Article']['content'],$match);
-								//echo "$match[1]";
-								if(!empty($match)){
-							?>
-								<p><img src="<?php echo "$match[1]";?>" /></p>
-							<?php }?>
-							<p><?php echo $this->StringUtil->sysSubStr($guide['Article']['content'],500);?></p>
+							<p><?php echo $this->StringUtil->blog_summary($guide['Article']['content'],500);?></p>
                         </div>
                     </div>
                 </li>

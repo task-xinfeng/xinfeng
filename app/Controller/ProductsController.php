@@ -41,7 +41,14 @@ class ProductsController extends AppController {
 	}
 	
 	public function item(){
+		if(empty($this->request->query['pid'])){
+			throw new NotFoundException("404");
+		}
 		$pid = $this->request->query['pid'];
+		if(!$this->Product->exists($pid)){
+			throw new NotFoundException("404");
+		}
+		
 		$product = $this->Product->findById($pid);
 		$this->set('product', $product);
 		

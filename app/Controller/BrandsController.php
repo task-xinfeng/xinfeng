@@ -22,7 +22,13 @@ class BrandsController extends AppController {
 	}
 	
 	public function item() {
+		if(empty($this->request->query['bid'])){
+			throw new NotFoundException("404");
+		}
 		$bid = $this->request->query['bid'];
+		if(!$this->Brand->exists($bid)){
+			throw new NotFoundException("404");
+		}
 		$brand = $this->Brand->findById($bid);
 		$this->set('brand', $brand);
 		//debug($brand);die();

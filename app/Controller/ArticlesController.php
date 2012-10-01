@@ -68,7 +68,14 @@ class ArticlesController extends AppController {
 	}
 	
 	public function item(){
+		if(empty($this->request->query['aid'])){
+			throw new NotFoundException("404");
+		}
 		$aid = $this->request->query['aid'];
+		if(!$this->Article->exists($aid)){
+			throw new NotFoundException("404");
+		}
+		
 		$article = $this->Article->findById($aid);
 		$this->set('article', $article);
 		
