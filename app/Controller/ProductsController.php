@@ -36,6 +36,8 @@ class ProductsController extends AppController {
 		);
 		$products = $this->paginate('Product');
 		$this->set('products', $products);
+		
+		$this->set('title_for_layout','新风网  —— 新风产品列表');//标题
 	}
 	
 	public function item(){

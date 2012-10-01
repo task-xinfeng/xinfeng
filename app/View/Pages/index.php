@@ -126,50 +126,36 @@
         </div>
     	<div class="main">
         	<ul class="items_group clearfix">
+				<?php foreach($brands as $brand):?>
             	<li class="item">
                 	<div class="pic">
-                    	<a href="#"></a>
+						<?php
+							$thumbnail = $this->Phpthumb->generate(
+								array(
+									'save_path' => WWW_ROOT . IMAGE_ROOT . 'thumbs',     
+									'display_path' => '/' . IMAGE_ROOT . 'thumbs',  
+									'error_image_path' => '/' . IMAGE_ROOT  . 'default.jpg',
+									'src' => WWW_ROOT . IMAGE_ROOT . BRAND . $brand['Brand']['logo'],
+									'w' => 165, 
+									'h' => 150,
+									'q' => 100,
+									'zc' => 1
+								)
+							);
+						?>
+						<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $brand['Brand']['id'])));?>" target="_blank">
+						<?php echo $this->Html->image($thumbnail['src'], array('width' => $thumbnail['w'], 'height' => $thumbnail['h'])); ?>
+						</a>
                     </div>
-                    <h3><a href="#">title</a></h3>
+                    <h3>
+						<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $brand['Brand']['id'])));?>" target="_blank">
+							<?php echo $brand['Brand']['name'];?>
+						</a>
+					</h3>
                 </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
+				<?php endforeach;?>
                 <li class="item more">
-                	<a href="#" target="_blank" title="更多">
+                	<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "index"));?>" target="_blank" title="更多">
                         <span class="more_icon"></span>
                         <span class="more_text">更多品牌</span>
                     </a>
@@ -206,26 +192,21 @@
         </div>
         <div class="main">
         	<ul class="items_group clearfix">
-            	<li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item more"><a href="#">查看更多</a></li>
+				<?php foreach($news as $newItem):?>
+            	<li class="item">
+					<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "item", "?"=>array("aid" => $newItem['Article']['id'])));?>" target="_blank">
+							<?php echo $this->StringUtil->sysSubStr($newItem['Article']['title'],60);?>
+						</a>
+					<span class="date">
+						<?php echo date('Y-m-d', strtotime($newItem['Article']['created'])); ?>
+					</span>
+				</li>
+				<?php endforeach;?>
+                <li class="item more">
+					<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "news"));?>" target="_blank">
+						查看更多
+					</a>
+				</li>
             </ul>
         </div>
         <div class="side">
@@ -253,50 +234,36 @@
         </div>
     	<div class="main">
         	<ul class="items_group clearfix">
+				<?php foreach($products as $product):?>
             	<li class="item">
                 	<div class="pic">
-                    	<a href="#"></a>
+                    	<?php
+							$thumbnail = $this->Phpthumb->generate(
+								array(
+									'save_path' => WWW_ROOT . IMAGE_ROOT . 'thumbs',     
+									'display_path' => '/' . IMAGE_ROOT . 'thumbs',  
+									'error_image_path' => '/' . IMAGE_ROOT  . 'default.jpg',
+									'src' => WWW_ROOT . IMAGE_ROOT . PRODUCT . $product['Product']['avatar'],
+									'w' => 165, 
+									'h' => 150,
+									'q' => 100,
+									'zc' => 1
+								)
+							);
+						?>
+						<a href="<?php echo $this->Html->url(array("controller" => "products","action" => "item", "?"=>array("pid" => $product['Product']['id'])));?>" target="_blank">
+						<?php echo $this->Html->image($thumbnail['src'], array('width' => $thumbnail['w'], 'height' => $thumbnail['h'])); ?>
+						</a>
                     </div>
-                    <h3><a href="#">title</a></h3>
+                    <h3>
+						<a href="<?php echo $this->Html->url(array("controller" => "products","action" => "item", "?"=>array("pid" => $product['Product']['id'])));?>" target="_blank">
+							<?php echo $product['Product']['name'];?>
+						</a>
+					</h3>
                 </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
-                <li class="item">
-                	<div class="pic">
-                    	<a href="#"></a>
-                    </div>
-                    <h3><a href="#">title</a></h3>
-                </li>
+				<?php endforeach;?>
                 <li class="item more">
-                	<a href="#" target="_blank" title="更多">
+                	<a href="<?php echo $this->Html->url(array("controller" => "products","action" => "index"));?>" target="_blank" title="更多">
                         <span class="more_icon"></span>
                         <span class="more_text">更多产品</span>
                     </a>
@@ -333,26 +300,21 @@
         </div>
         <div class="main">
         	<ul class="items_group clearfix">
-            	<li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item"><a href="#">东风率先整合自主品牌 三大品牌集体换标</a><span class="date">2012-12-02</span></li>
-                <li class="item more"><a href="#">查看更多</a></li>
+            	<?php foreach($guides as $guide):?>
+            	<li class="item">
+					<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "item", "?"=>array("aid" => $guide['Article']['id'])));?>" target="_blank">
+							<?php echo $this->StringUtil->sysSubStr($guide['Article']['title'],60);?>
+						</a>
+					<span class="date">
+						<?php echo date('Y-m-d', strtotime($guide['Article']['created'])); ?>
+					</span>
+				</li>
+				<?php endforeach;?>
+                <li class="item more">
+					<a href="<?php echo $this->Html->url(array("controller" => "articles","action" => "guides"));?>" target="_blank">
+						查看更多
+					</a>
+				</li>
             </ul>
         </div>
         <div class="side">
