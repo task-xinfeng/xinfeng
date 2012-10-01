@@ -356,7 +356,7 @@
 
 <!--底部加入-->
 	<div class="block_center join_bottom">
-    	<a href="<?php echo $this->Html->url(array("controller" => "pages","action" => "about","?"=>array("about_index" => 2)));?>" class="join_link"></a>
+    	<a href="<?php echo $this->Html->url(array("controller" => "pages","action" => "cooperate"));?>" class="join_link"></a>
     </div>
 <!--底部加入 ends-->
 

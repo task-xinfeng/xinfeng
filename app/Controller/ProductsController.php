@@ -31,7 +31,7 @@ class ProductsController extends AppController {
 				'recursive' => 2,
 				'conditions' => $conditions,
 				'order' => 'Product.id desc',
-				'limit' => 1,
+				'limit' => 10,
 				'page'=>1)
 		);
 		$products = $this->paginate('Product');

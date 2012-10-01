@@ -44,6 +44,15 @@ class PagesController extends AppController {
 	public function about(){
 	}
 	
+	public function policy(){
+	}
+	
+	public function cooperate(){
+	}
+	
+	public function contract(){
+	}
+	
 	public function error400(){
 	}
 }

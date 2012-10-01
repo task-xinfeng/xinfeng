@@ -51,8 +51,16 @@
 						</dd>
                     </dl>
                     <div class="smain clearfix">
-                        <div class="para">
-                        	<?php echo $newItem['Article']['content'];?>
+                       <div class="para">
+                        	<?php //echo $guide['Article']['content'];?>
+							<?php 
+								preg_match("<img.*src=[\"](.*?)[\"].*?>",$newItem['Article']['content'],$match);
+								//echo "$match[1]";
+								if(!empty($match)){
+							?>
+								<p><img src="<?php echo "$match[1]";?>" /></p>
+							<?php }?>
+							<p><?php echo $this->StringUtil->sysSubStr($newItem['Article']['content'],500);?></p>
                         </div>
                     </div>
                 </li>

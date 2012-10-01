@@ -30,7 +30,7 @@ class ArticlesController extends AppController {
 				'recursive' => 2,
 				'conditions' => $conditions,
 				'order' => 'Article.id desc',
-				'limit' => 1,
+				'limit' => 10,
 				'page'=>1)
 		);
 		$news = $this->paginate('Article');
@@ -58,7 +58,7 @@ class ArticlesController extends AppController {
 				'recursive' => 2,
 				'conditions' => $conditions,
 				'order' => 'Article.id desc',
-				'limit' => 1,
+				'limit' => 10,
 				'page'=>1)
 		);
 		$guides = $this->paginate('Article');
