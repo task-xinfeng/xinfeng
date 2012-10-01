@@ -14,11 +14,17 @@ class ArticlesController extends AppController {
 	public function news(){
 		if(!empty($this->request->named['bid'])){
 			$bid = $this->request->named['bid'];
+			if(!$this->Brand->exists($bid)){
+				throw new NotFoundException("404");
+			}
 			$brand = $this->Brand->findById($bid);
 			$this->set('brand', $brand);
 			$conditions = array('Article.type' => 'news', 'Article.brand_id' => $bid);
 		}else if(!empty($this->request->query['bid'])){
 			$bid = $this->request->query['bid'];
+			if(!$this->Brand->exists($bid)){
+				throw new NotFoundException("404");
+			}
 			$brand = $this->Brand->findById($bid);
 			$this->set('brand', $brand);
 			$conditions = array('Article.type' => 'news', 'Article.brand_id' => $bid);

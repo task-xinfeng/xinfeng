@@ -14,7 +14,7 @@
 
 <!--面包屑-->
 <div class="page_route block_center">
-	<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item"));?>">首页</a>
+	<a href="<?php echo $this->webroot;?>">首页</a>
 		<span class="arr">/</span>
 	<?php if(isset($brand)){?>
 		<a href="<?php echo $this->Html->url(array("controller" => "brands","action" => "item", "?"=>array("bid" => $brand['Brand']['id'])));?>"><?php echo $brand['Brand']['name'];?></a>

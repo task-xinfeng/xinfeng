@@ -6,7 +6,7 @@
 	<div class="header_nav">
     	<ul class="header_nav_ul clearfix">
 			<li>
-				<a href="<?php echo $this->Html->url(array("controller" => "pages","action" => "index"));?>">
+				<a href="<?php echo $this->webroot;?>">
 					首页
 				</a>
 			</li>
