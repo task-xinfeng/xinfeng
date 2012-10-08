@@ -251,14 +251,14 @@
 .content.about .about_menu li a.current{ background:#fefefe;}
 .content.about .about_menu li a.current:hover{ background:#fefefe; color:#333;}
 
-
-
-
-
-
-
-
-
+/* error page*/
+.error_page.content{ width:690px; padding:20px 30px; background:none; border:1px dashed #aaaaaa; margin-bottom:30px;}
+.error_page .error_page_icon{ background:url(../img/error_page_icon.png) no-repeat; _background:url(../img/error_page_icon.gif) no-repeat; width:140px; height:140px; float:left;}
+.error_page .error_tip{ padding:30px 40px 0 0; float:right;}
+.error_page .error_tip p{ color:#666; text-align:right;}
+.error_page .error_tip p.a{ font-size:27px; margin-bottom:10px;}
+.error_page .error_tip p.a span{ color:#333; padding:0 3px;}
+.error_page .error_tip p.b a{ font-size:14px;}
 
 
 
